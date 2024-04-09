@@ -1,7 +1,8 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('node:path');
 
-const isDev = true;
+const isDev = process.env.NODE_ENV;
+console.log(isDev)
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) {

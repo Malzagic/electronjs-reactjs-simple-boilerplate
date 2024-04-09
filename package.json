@@ -5,12 +5,12 @@
   "description": "My Electron application description",
   "main": ".webpack/main",
   "scripts": {
-    "start": "electron-forge start",
-    "package": "electron-forge package",
-    "make": "electron-forge make",
-    "make-win": "electron-forge make --platform win32",
-    "make-linux": "electron-forge make --platform linux",
-    "make-macos": "electron-forge make --platform darwin",
+    "start": "set NODE_ENV=development && electron-forge start",
+    "package": "set NODE_ENV=production electron-forge package",
+    "make": "set NODE_ENV=production electron-forge make",
+    "make-win": "set NODE_ENV=production electron-forge make --platform win32",
+    "make-linux": "set NODE_ENV=production electron-forge make --platform linux",
+    "make-macos": "set NODE_ENV=production electron-forge make --platform darwin",
     "publish": "electron-forge publish",
     "lint": "echo \"No linting configured\""
   },
