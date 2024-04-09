@@ -26,10 +26,6 @@ npm start
 
 #### Build the app (automatic)
 
-### Change isDev variable to false to avoid open devtools (i am going to change this in the future to use NODE_ENV)
-
-Change the app title in the **webpack.build.config.js** and the **webpack.dev.config.js** 
-
 ```
 npm run package
 ```
